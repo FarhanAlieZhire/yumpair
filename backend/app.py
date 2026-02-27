@@ -12,7 +12,7 @@ CORS(app)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv(
     "DATABASE_URL",
-    "mysql+pymysql://root:password@localhost:3306/yumpair_auth",
+    "mysql+pymysql://root:orcl@localhost:3306/yumpair_auth",
 )
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY", "change-this-secret")
